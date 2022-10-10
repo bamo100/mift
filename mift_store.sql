@@ -226,11 +226,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `p_cat_id`, `cat_id`, `date`, `product_title`, `product_img1`, `product_img2`, `product_img3`, `product_price`, `product_keywords`, `product_desc`) VALUES
-(3, 3, 3, '2020-11-25 10:09:45', 'Boys Puffer Coat With Detachable Hood 1', 'boys-Puffer-Coat-With-Detachable-Hood-1.jpg', '', '', 120, 'Hood', '<p>badejo is a gonner one of the gratest rival red devils ever had in ibadan microgold</p>'),
-(4, 5, 2, '2020-11-25 10:18:38', 'g polos tshirt-1', 'g-polos-tshirt-1.jpg', '', '', 100, 'Shirt', '<p>100%&nbsp; Quality&nbsp; T-Shirt&nbsp;</p>'),
-(7, 4, 0, '2020-11-25 10:30:07', 'Man-Adidas-Suarez-Slop-On-1', 'Man-Adidas-Suarez-Slop-On-1.jpg', '', '', 66, 'Sneakers', '<p>Nice Sneakers for Jugging and Sport</p>'),
-(13, 5, 1, '2020-11-30 12:39:54', 'Boys Polo T-Shirt', 'polos-tshirt-1.jpg', 'polos-tshirt-2.jpg', '', 40, 'Casuals', '<p>100% quality T-shirt for young lads age (6-15) years.Made in Ibadan,Nigeria.</p>'),
-(14, 1, 0, '2020-11-30 13:21:10', 'Red-Winter-jacket-1', 'Red-Winter-jacket-1.jpg', 'Red-Winter-jacket-2.jpg', 'Red-Winter-jacket-3.jpg', 96, 'Hood', '<p>100% quality silk.made with latest silk mateerial in town</p>');
+(3, 3, 3, '2022-10-10 10:09:45', 'Boys Puffer Coat With Detachable Hood 1', 'boys-Puffer-Coat-With-Detachable-Hood-1.jpg', '', '', 120, 'Hood', '<p>badejo is a gonner one of the gratest rival red devils ever had in ibadan microgold</p>'),
+(4, 5, 2, '2022-10-10 10:18:38', 'g polos tshirt-1', 'g-polos-tshirt-1.jpg', '', '', 100, 'Shirt', '<p>100%&nbsp; Quality&nbsp; T-Shirt&nbsp;</p>'),
+(7, 4, 0, '2022-10-10 10:30:07', 'Man-Adidas-Suarez-Slop-On-1', 'Man-Adidas-Suarez-Slop-On-1.jpg', '', '', 66, 'Sneakers', '<p>Nice Sneakers for Jugging and Sport</p>'),
+(13, 5, 1, '2022-10-10 12:39:54', 'Boys Polo T-Shirt', 'polos-tshirt-1.jpg', 'polos-tshirt-2.jpg', '', 40, 'Casuals', '<p>100% quality T-shirt for young lads age (6-15) years.Made in Ibadan,Nigeria.</p>'),
+(14, 1, 0, '2022-10-10 13:21:10', 'Red-Winter-jacket-1', 'Red-Winter-jacket-1.jpg', 'Red-Winter-jacket-2.jpg', 'Red-Winter-jacket-3.jpg', 96, 'Hood', '<p>100% quality silk.made with latest silk mateerial in town</p>');
 
 -- --------------------------------------------------------
 
