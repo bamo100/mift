@@ -78,8 +78,7 @@
                                       <label class="col-md-5 control-label">Product Size</label>
 
                                       <div class="col-md-7">
-                                          <select name="product_size" class="form-control" required oninput="setCustomValidity('')"
-                                           oninvalid="setCustomValidity('Must pick 1 size for the product')">
+                                      <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')">
                                               <option value='' disabled selected>Select a size</option>
                                               <option>Small</option>
                                               <option>Medium</option>
@@ -89,53 +88,51 @@
                                   </div>
 
                                   <p class="price"> $ <?php echo $pro_price; ?></p>
-                                  <p class="text-center buttons">
-                                    <button class="btn btn-primary" name="add_cart" type="submit">
-                                        <i class="fa fa-shopping-cart"></i> Add to Cart
-                                    </button>
-                                  </p>
+                                  <p class="text-center buttons"><button type="submit" name="add_cart" class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
                               </form>
                               <?php 
-                               
-                                if (isset($_POST['add_cart'])) {
+
+                                if(isset($_POST['add_cart'])){
         
                                     $ip_add = getRealIpUser();
 
-                                    $get_products = "select * from products order by 1 DESC LIMIT 0,20";
+                                     $get_products = "select * from products";
      
-                                    $run_products = mysqli_query($db,$get_products);
+                                    $run_products = mysqli_query($con,$get_products);
                                
                                     while ($row_products = mysqli_fetch_array($run_products)) {
                                
                                        $pro_id = $row_products['product_id'];
+
+                                       $product_price = $row_products['product_price'];
                                
                                     }
-                            
+   
                                     $p_id = $pro_id;
-                            
+                                    
                                     $product_qty = $_POST['product_qty'];
-                            
+                                    
                                     $product_size = $_POST['product_size'];
-                            
+                                    
                                     $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
-                            
+                                    
                                     $run_check = mysqli_query($con,$check_product);
-                            
-                                    if (mysqli_num_rows($run_check)>0) {
-                            
-                                    echo "<script> alert('This product has already been added in cart') </script>";
-
-                                    echo "<script> windows.open('/','_self') </script>";
+                                    
+                                    if(mysqli_num_rows($run_check)>0){
+                                        
+                                        echo "<script>alert('This product has already added in cart')</script>";
+                                        echo "<script>window.open('index.php','_self')</script>";
+                                        
+                                    }else{
+                                        
+                                        $query = "insert into cart (p_id,ip_add,qty,price,size) values ('$p_id','$ip_add','$product_qty','$product_price','$product_size')";
+                                        
+                                        $run_query = mysqli_query($con,$query);
+                                        
+                                        echo "<script>window.open('index.php','_self')</script>";
+                                        
                                     }
                                     
-                                    else{
-                                    $query = "insert into cart (p_id,ip_add,qty,size) values ('$p_id','$ip_add','$product_qty','$product_size')";
-                            
-                                    $run_query = mysqli_query($con,$query);
-                            
-                                    echo "<script> windows.open('/','_self') </script>";
-                            
-                                    }
                                 }
                                
                               ?>
