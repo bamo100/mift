@@ -21,7 +21,7 @@
 <body>
     
     <div class="container">
-        <form action="" class="form-login" method="POST">
+        <form action="" class="form-login" method="GET">
             <h2 class="form-login-heading"> Admin Login </h2>
 
             <input type="text" class="form-control" placeholder="Email Address" name="admin_email" required>
@@ -41,11 +41,11 @@
 
 <?php 
 
-  if(isset($_POST['admin_login'])) {
+  if(isset($_GET['admin_login'])) {
 
-    $admin_email = mysqli_real_escape_string($con,$_POST['admin_email']);
+    $admin_email = $_GET['admin_email'];
 
-    $admin_pass = mysqli_real_escape_string($con,$_POST['admin_pass']);
+    $admin_pass = $_GET['admin_pass'];
 
     $get_admin = "select * from admins where admin_email='$admin_email' AND admin_pass='$admin_pass'";
     

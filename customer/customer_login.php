@@ -15,7 +15,7 @@
         
     </div>
 
-    <form action="checkout.php" method="POST">
+    <form action="checkout.php" method="GET">
     
       <div class="form-group">
       
@@ -59,11 +59,11 @@
 
 <?php
 
-  if (isset($_POST['login'])) {
+  if (isset($_GET['login'])) {
          
-     $customer_email = $_POST['c_email'];
+     $customer_email = $_GET['c_email'];
 
-     $customer_pass = $_POST['c_pass'];
+     $customer_pass = $_GET['c_pass'];
 
      $select_customer = "select * from customers where customer_email = '$customer_email' AND
       customer_pass='$customer_pass'";
