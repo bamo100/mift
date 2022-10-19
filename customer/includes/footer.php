@@ -51,7 +51,6 @@
                         ?>
 
                   </li>
-                  <li><a href="../terms.php">Terms & Conditions</a></li>
               </ul>
 
 
@@ -100,12 +99,12 @@
 
               <p>
 
-                <strong>M-Dev Media inc.</strong>
+               <strong>E-COM Media inc.</strong>
                 <br>Ciburbur
                 <br>Ciracas
                 <br>0818-0683-3157
-                <br>muginto4th@gmail.com
-                <br><strong>MrGhie</strong>
+                <br>ecomstore@gmail.com
+                <br><strong>E-COM</strong>
 
               </p>
 
@@ -150,12 +149,8 @@
 <div id="copyright">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <p class="pull-left">&copy; 2020 M-DEV Store All Rights Reserved</p>
-            </div>
-
-            <div class="col-md-6">
-                <p class="pull-right">Theme by: <a href="#">Mr-Ghie</a></p>
+            <div class="col-md-12">
+                <p class="text-center">&copy; 2022 E-COM Store All Rights Reserved</p>
             </div>
         </div>
     </div>

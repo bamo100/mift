@@ -90,9 +90,9 @@ if(isset($_GET['pro_id'])) {
                   <li>
                     <a href="customer_register.php">Register</a>
                   </li>
-                  <!-- <li>
+                  <li>
                     <a href="customer/my_account.php">My Account</a>
-                  </li> -->
+                  </li>
                   <li>
                       <a href="cart.php">Go To Cart</a>
                   </li>
